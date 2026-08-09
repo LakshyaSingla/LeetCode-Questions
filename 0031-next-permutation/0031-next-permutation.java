@@ -12,7 +12,7 @@ class Solution {
             reverse(nums, 0, n- 1);
             return;
         }
-        for(int i = n - 1; i >= 0 ; i--){
+        for(int i = n - 1; i > index; i--){
             if(nums[i] > nums[index]){
                 int temp = nums[i];
                 nums[i] = nums[index];
