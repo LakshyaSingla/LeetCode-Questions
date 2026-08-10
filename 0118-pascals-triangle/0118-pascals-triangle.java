@@ -1,20 +1,19 @@
 class Solution {
-    List<Integer> oneRow(int row){
+    public List<Integer> genRow(int row){
         List<Integer> ansRow = new ArrayList<>();
+        long res = 1;
         ansRow.add(1);
-        int res = 1;
-        for(int col = 1; col < row; col++){
-            res *= (row - col);
-            res /= col;
-            ansRow.add(res);
+        for(int i = 1; i < row; i++){
+            res*= row-i;
+            res/= i;
+            ansRow.add((int)res);
         }
         return ansRow;
-        
     }
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList<>();
-        for(int row = 1; row <= numRows; row++){
-            ans.add(oneRow(row));
+        for(int i = 1; i <= numRows; i++){
+            ans.add(genRow(i));
         }
         return ans;
     }
