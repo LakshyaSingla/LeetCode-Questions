@@ -9,15 +9,17 @@ class Solution {
         }
 
         for(int num : st){
+            
             if(!st.contains(num - 1)){
-                int count = 1;
                 int x = num;
+                int count = 1;
+
                 while(st.contains(x + 1)){
                     x = x + 1;
                     count++;
                 }
-                longest = Math.max(count, longest);
-            }
+                longest = Math.max(longest, count);
+            }            
         }
         return longest;
     }
