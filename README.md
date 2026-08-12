@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0048-rotate-image) |
+| [0050-powx-n](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0050-powx-n) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Quicksort
 |  |
@@ -135,4 +136,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
+## Recursion
+|  |
+| ------- |
+| [0050-powx-n](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0050-powx-n) |
 <!---LeetCode Topics End-->
