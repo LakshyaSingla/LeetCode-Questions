@@ -9,12 +9,15 @@ class Solution {
         curr.add(candidates[index]);
         backtrack(index, n, candidates, target - candidates[index], ans, curr);
         curr.remove(curr.size() - 1);
-        for(int i = index + 1; i < n; i++){
-            if(candidates[i] != candidates[index]){
-                backtrack(i, n, candidates, target, ans, curr);
-                break;
-            }
-        }
+        backtrack(index + 1, n, candidates, target, ans, curr);
+
+        // If values are not distinct
+        // for(int i = index + 1; i < n; i++){
+        //     if(candidates[i] != candidates[index]){
+        //         backtrack(i, n, candidates, target, ans, curr);
+        //         break;
+        //     }
+        // }
         
     }
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
