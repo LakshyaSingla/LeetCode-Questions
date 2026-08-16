@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
+| [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
@@ -41,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Two Pointers
 |  |
@@ -168,4 +170,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0090-subsets-ii) |
+## Prefix Sum
+|  |
+| ------- |
+| [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 <!---LeetCode Topics End-->
