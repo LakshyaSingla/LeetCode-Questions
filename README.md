@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0053-maximum-subarray) |
 | [0118-pascals-triangle](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0119-pascals-triangle-ii) |
+| [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0152-maximum-product-subarray) |
 ## Math
 |  |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0022-generate-parentheses) |
+| [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 ## Backtracking
 |  |
 | ------- |
@@ -163,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0090-subsets-ii) |
+| [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0216-combination-sum-iii) |
 ## Bracket Sequences
 |  |
