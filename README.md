@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0054-spiral-matrix) |
 | [0075-sort-colors](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0088-merge-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0090-subsets-ii) |
 | [0118-pascals-triangle](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0118-pascals-triangle) |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0048-rotate-image](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0054-spiral-matrix) |
+| [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Dynamic Programming
 |  |
@@ -155,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0022-generate-parentheses) |
+| [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 ## Backtracking
 |  |
@@ -164,6 +167,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0216-combination-sum-iii) |
@@ -180,4 +184,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
+## Depth-First Search
+|  |
+| ------- |
+| [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
