@@ -1,61 +1,62 @@
 class Solution {
-    boolean isValid(List<String> ansRow, int row, int col){
+    void Queen(int row, int n, List<List<String>> ans, List<String> board){
+        if(row == n){
+            ans.add(new ArrayList<>(board));
+            return;
+        }
+
+        for(int col = 0; col < n; col++){
+            if(isValid(row, col,board)){
+                char[] arr = board.get(row).toCharArray();
+                arr[col] = 'Q';
+                board.set(row, new String(arr));
+                Queen(row + 1, n, ans, board);
+                arr[col] = '.';
+                board.set(row, new String(arr));
+            }
+        }
+    }
+    public List<List<String>> solveNQueens(int n) {
+        List<List<String>> ans = new ArrayList<>();
+        List<String> board = new ArrayList<>();
+
+        String temp = "";
+        for(int i = 0; i < n; i++){
+            temp+=".";
+        }
+        for(int i = 0; i < n; i++){
+            board.add(temp);
+        }
+        Queen(0,n,ans,board);
+        return ans;
+    }
+    boolean isValid(int row, int col, List<String> board){
+
         int r = row;
         int c = col;
         while(r >= 0){
-            if(ansRow.get(r).charAt(c) == 'Q'){
+            if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
         }
         r = row;
-        while(r >=0 && c >= 0){
-            if(ansRow.get(r).charAt(c) == 'Q'){
+        while(r >= 0 && c >= 0){
+            if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
             c--;
         }
-        r = row;
+        r = row; 
         c = col;
-        while(r >= 0 && c < ansRow.size()){
-            if(ansRow.get(r).charAt(c) == 'Q'){
+        while(r >= 0 && c < board.size()){
+            if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
             c++;
         }
         return true;
-    }
-    void eachRow(int row, List<List<String>> ans,List<String> ansRow){
-        if(row == ansRow.size()){
-            ans.add(new ArrayList<>(ansRow));
-            return;
-        }
-        for(int col = 0; col < ansRow.get(row).length(); col++){
-            
-            if(isValid(ansRow, row, col)){
-                char[] arr = ansRow.get(row).toCharArray();
-                arr[col] = 'Q';
-                ansRow.set(row, new String(arr));
-                eachRow(row + 1, ans, ansRow);
-                arr[col] = '.';
-                ansRow.set(row, new String(arr));
-            }
-        }
-
-    } 
-    public List<List<String>> solveNQueens(int n) {
-        List<List<String>> ans = new ArrayList<>();
-        List<String> ansRow = new ArrayList<>();
-        String temp = "";
-        for(int i = 0; i < n; i++){
-            temp+='.';
-        }
-        for(int i = 0; i < n; i++){
-            ansRow.add(temp);
-        }
-        eachRow(0, ans, ansRow);
-        return ans;
     }
 }
