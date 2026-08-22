@@ -1,64 +1,62 @@
 class Solution {
-    boolean isValid(List<String> ansRow, int row, int col){
+    int Queen(int row, int n, List<String> board){
+        int count = 0;
+        if(row == n){
+            return 1;
+        }
+
+        for(int col = 0; col < n; col++){
+            if(isValid(row, col,board)){
+                char[] arr = board.get(row).toCharArray();
+                arr[col] = 'Q';
+                board.set(row, new String(arr));
+                count+= Queen(row + 1, n, board);
+                arr[col] = '.';
+                board.set(row, new String(arr));
+            }
+        }
+        return count;
+    }
+    public int totalNQueens(int n) {
+        List<String> board = new ArrayList<>();
+
+        String temp = "";
+        for(int i = 0; i < n; i++){
+            temp+=".";
+        }
+        for(int i = 0; i < n; i++){
+            board.add(temp);
+        }
+        return Queen(0,n,board);
+         
+    }
+    boolean isValid(int row, int col, List<String> board){
+
         int r = row;
         int c = col;
         while(r >= 0){
-            if(ansRow.get(r).charAt(c) == 'Q'){
+            if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
         }
         r = row;
-        while(r >=0 && c >= 0){
-            if(ansRow.get(r).charAt(c) == 'Q'){
+        while(r >= 0 && c >= 0){
+            if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
             c--;
         }
-        r = row;
+        r = row; 
         c = col;
-        while(r >= 0 && c < ansRow.size()){
-            if(ansRow.get(r).charAt(c) == 'Q'){
+        while(r >= 0 && c < board.size()){
+            if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
             c++;
         }
         return true;
-    }
-    int eachRow(int row,List<String> ansRow){
-        
-        if(row == ansRow.size()){  
-            return 1;
-        }
-        int ans = 0;
-        for(int col = 0; col < ansRow.get(row).length(); col++){
-            
-            if(isValid(ansRow, row, col)){
-                char[] arr = ansRow.get(row).toCharArray();
-                arr[col] = 'Q';
-                ansRow.set(row, new String(arr));
-                ans+= eachRow(row + 1, ansRow);
-                arr[col] = '.';
-                ansRow.set(row, new String(arr));
-            }
-        }
-        return ans;
-       
-        
-    } 
-    public int totalNQueens(int n) {
-        List<String> ansRow = new ArrayList<>();
-        
-        String temp = "";
-        for(int i = 0; i < n; i++){
-            temp+='.';
-        }
-        for(int i = 0; i < n; i++){
-            ansRow.add(temp);
-        }
-        return eachRow(0, ansRow);
-        
     }
 }
