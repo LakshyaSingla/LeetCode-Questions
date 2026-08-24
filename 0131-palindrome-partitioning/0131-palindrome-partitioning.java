@@ -1,4 +1,12 @@
 class Solution {
+    boolean isPalindrome(String s, int index, int i){
+        while(index < i){
+            if(s.charAt(index++) != s.charAt(i--)){
+                return false;
+            }
+        }
+        return true;
+    }
     void backtrack(int index, String s, List<List<String>> ans, List<String> curr){
         if(index == s.length()){
             ans.add(new ArrayList<>(curr));
@@ -15,15 +23,8 @@ class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> ans = new ArrayList<>();
         List<String> curr = new ArrayList<>();
-        backtrack(0,s,ans,curr);
+
+        backtrack(0 , s, ans, curr);
         return ans;
-    }
-    boolean isPalindrome(String s, int index, int i){
-        while(index < i){
-            if(s.charAt(index++)!=s.charAt(i--)){
-                return false;
-            }
-        }
-        return true;
     }
 }
