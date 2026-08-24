@@ -2,6 +2,7 @@ class Solution {
     boolean isValid(int row, int col, List<String> board){
         int r = row;
         int c = col;
+
         while(r >= 0){
             if(board.get(r).charAt(c) == 'Q'){
                 return false;
@@ -9,16 +10,17 @@ class Solution {
             r--;
         }
         r = row;
-        while(r >= 0 && c >= 0){
+        while(r >=0 && c >= 0){
             if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
             r--;
             c--;
+
         }
         r = row;
-        c=col;
-        while(r >= 0 && c < board.size()){
+        c = col;
+        while(r >= 0 && c < board.get(0).length()){
             if(board.get(r).charAt(c) == 'Q'){
                 return false;
             }
@@ -27,19 +29,18 @@ class Solution {
         }
         return true;
     }
-
-    void Queen(int row, List<String> board, List<List<String>> ans){
+    void FindBoard(int row,List<String> board, List<List<String>> ans){
         if(row == board.size()){
             ans.add(new ArrayList<>(board));
             return;
         }
 
-        for(int col = 0; col < board.size(); col++){
+        for(int col = 0; col < board.get(0).length(); col++){
             if(isValid(row, col, board)){
                 char[] arr = board.get(row).toCharArray();
                 arr[col] = 'Q';
                 board.set(row, new String(arr));
-                Queen(row + 1, board, ans);
+                FindBoard(row + 1, board,ans);
                 arr[col] = '.';
                 board.set(row, new String(arr));
             }
@@ -50,12 +51,12 @@ class Solution {
         List<String> board = new ArrayList<>();
         String temp = "";
         for(int i = 0; i < n; i++){
-            temp+=".";
+            temp+= '.';
         }
         for(int i = 0; i < n; i++){
             board.add(temp);
         }
-        Queen(0, board, ans);
+        FindBoard(0, board, ans);
         return ans;
     }
 }
