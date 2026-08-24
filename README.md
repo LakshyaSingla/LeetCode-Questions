@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0020-valid-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0022-generate-parentheses) |
 | [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bracket Sequences
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0022-generate-parentheses) |
 ## Bit Manipulation
 |  |
@@ -196,4 +198,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0051-n-queens](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0052-n-queens-ii) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
