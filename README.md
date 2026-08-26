@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
@@ -59,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0088-merge-sorted-array) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2149-rearrange-array-elements-by-sign) |
 ## Binary Search
 |  |
@@ -77,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -120,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0075-sort-colors) |
+| [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 ## Bubble Sort
 |  |
 | ------- |
@@ -211,4 +215,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0037-sudoku-solver) |
+## Greedy
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 <!---LeetCode Topics End-->
