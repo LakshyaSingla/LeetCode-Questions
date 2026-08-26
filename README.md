@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
+| [0860-lemonade-change](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0860-lemonade-change) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
@@ -219,4 +220,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
+| [0860-lemonade-change](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0860-lemonade-change) |
 <!---LeetCode Topics End-->
