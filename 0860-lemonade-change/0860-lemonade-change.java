@@ -13,9 +13,9 @@ class Solution {
                     return false;
                 }
             }else{
-                if(ten >= 1 && five >= 1){
-                    ten--;
+                if(five >= 1 && ten >= 1){
                     five--;
+                    ten--;
                 }else if(five >= 3){
                     five = five - 3;
                 }else{
