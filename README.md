@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 ## Divide and Conquer
 |  |
@@ -116,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0119-pascals-triangle-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0119-pascals-triangle-ii) |
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0152-maximum-product-subarray) |
+| [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
 ## Math
 |  |
 | ------- |
@@ -222,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0055-jump-game) |
+| [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 | [0860-lemonade-change](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0860-lemonade-change) |
 <!---LeetCode Topics End-->
