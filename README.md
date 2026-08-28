@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0055-jump-game) |
+| [0057-insert-interval](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
