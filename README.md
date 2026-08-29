@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0152-maximum-product-subarray) |
 | [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
+| [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
 ## Math
 |  |
 | ------- |
@@ -175,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0022-generate-parentheses) |
 | [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
+| [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
 ## Backtracking
 |  |
 | ------- |
@@ -195,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0022-generate-parentheses) |
+| [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -218,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0020-valid-parentheses) |
+| [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
 ## Dancing Links
 |  |
 | ------- |
@@ -228,5 +232,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0055-jump-game) |
 | [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
+| [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
 | [0860-lemonade-change](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0860-lemonade-change) |
 <!---LeetCode Topics End-->
