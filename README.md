@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 | [0860-lemonade-change](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0860-lemonade-change) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Hash Table
@@ -211,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -244,4 +246,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0042-trapping-rain-water) |
+## Sliding Window
+|  |
+| ------- |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 <!---LeetCode Topics End-->
