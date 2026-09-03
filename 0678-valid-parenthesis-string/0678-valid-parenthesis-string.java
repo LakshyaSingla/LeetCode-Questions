@@ -1,7 +1,8 @@
 class Solution {
     public boolean checkValidString(String s) {
-        int minOpen = 0, maxOpen = 0;
-
+        int minOpen = 0;
+        int maxOpen = 0;
+        
         for(char c : s.toCharArray()){
             if(c == '('){
                 minOpen++;
