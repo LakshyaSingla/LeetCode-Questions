@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 | [0904-fruit-into-baskets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0904-fruit-into-baskets) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Two Pointers
 |  |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0131-palindrome-partitioning) |
 | [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 ## Backtracking
 |  |
 | ------- |
@@ -262,5 +264,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0076-minimum-window-substring](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0076-minimum-window-substring) |
 | [0904-fruit-into-baskets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0904-fruit-into-baskets) |
 | [1004-max-consecutive-ones-iii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1004-max-consecutive-ones-iii) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 <!---LeetCode Topics End-->
