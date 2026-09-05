@@ -4,8 +4,8 @@ class Solution {
 
         while(low <= high){
             int mid = low + (high - low )  / 2;
-            if(nums[low] <= nums[high]){
-                min = nums[low];
+            if(nums[low] < nums[high]){
+                min = Math.min(min,nums[low]);
                 break;
             }
             if(nums[mid] >= nums[low]){
