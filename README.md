@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0069-sqrtx](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0069-sqrtx) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
@@ -153,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0048-rotate-image](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0050-powx-n) |
+| [0069-sqrtx](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0069-sqrtx) |
 | [1248-count-number-of-nice-subarrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1248-count-number-of-nice-subarrays) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Quicksort
@@ -288,4 +290,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1248-count-number-of-nice-subarrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
+## Newton's Method
+|  |
+| ------- |
+| [0069-sqrtx](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0069-sqrtx) |
 <!---LeetCode Topics End-->
