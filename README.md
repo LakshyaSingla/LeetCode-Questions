@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
+| [0540-single-element-in-a-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0560-subarray-sum-equals-k) |
 | [0860-lemonade-change](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0860-lemonade-change) |
 | [0904-fruit-into-baskets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0904-fruit-into-baskets) |
@@ -95,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
+| [0540-single-element-in-a-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0540-single-element-in-a-sorted-array) |
 | [1004-max-consecutive-ones-iii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1004-max-consecutive-ones-iii) |
 ## Sorting
 |  |
