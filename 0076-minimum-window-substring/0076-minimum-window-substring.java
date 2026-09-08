@@ -14,17 +14,16 @@ class Solution {
             }
             hash[s.charAt(r)]--;
             while(count == m){
-                 
+                 if(r-l+1 < minlen){
+                    minlen = r-l + 1;
+                    sIndex = l;
+                 }
                 hash[s.charAt(l)]++;
                 if(hash[s.charAt(l)] > 0){
                     count--;
                 }
-                sIndex = l;
-                 minlen = Math.min(minlen, r-l+1);
                 l++;
-                
             }
-           
             r++;
         }
         return (sIndex == -1) ? "" : s.substring(sIndex, sIndex + minlen);
