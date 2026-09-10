@@ -1,25 +1,23 @@
 class Solution {
     boolean isPossible(int mid, int[] nums, int k){
-        int count = 1, subsum = 0;
+        int count = 1, sum = 0;
         for(int i = 0; i < nums.length; i++){
-            if(subsum + nums[i] <= mid){
-                subsum += nums[i];
+            if(sum + nums[i] <= mid){
+                sum += nums[i];
             }else{
+                sum = nums[i];
                 count++;
-                subsum = nums[i];
             }
         }
-        return count <= k; 
+        return count <= k;
     }
     public int splitArray(int[] nums, int k) {
         int n = nums.length;
-        if(n < k) return -1;
-
-        int low = Integer.MIN_VALUE;
-        int high = 0;
-        for(int i = 0; i < n; i++){
-            low = Math.max(low, nums[i]);
-            high += nums[i];
+        if(k > n) return -1;
+        int low = Integer.MIN_VALUE, high = 0;
+        for(int num : nums){
+            low = Math.max(num, low);
+            high += num;
         }
         while(low <= high){
             int mid = low + (high - low) / 2;
