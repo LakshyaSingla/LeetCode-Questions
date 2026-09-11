@@ -1,30 +1,30 @@
 class Solution {
     public int candy(int[] ratings) {
         int n = ratings.length;
+        int count = 1, i = 1;
 
-        int r = 1, sum = 1;
-
-        while(r < n){
-            if(ratings[r] == ratings[r - 1]){
-                sum++;
-                r++;
+        while(i < n){
+            if(ratings[i] == ratings[i - 1]){
+                count++;
+                i++;
             }
             int peak = 1;
-        while(r < n && ratings[r] > ratings[r - 1]){
-            peak++;
-            sum += peak;
-            r++;
+            while(i < n && ratings[i] > ratings[i - 1]){
+                peak++;
+                count += peak;
+                i++;
+            }
+            int down = 1;
+            while(i < n && ratings[i] < ratings[i - 1]){
+                count += down;
+                down++;
+                i++;
+            }
+            if(down > peak){
+                count += down - peak;
+            }
         }
-        int down = 1;
-        while(r < n && ratings[r] < ratings[r-1]){
-            sum+= down;
-            down++;
-            r++;
-        }
-        if(down > peak){
-            sum+= down - peak;
-        }
+        return count;
+        
     }
-    return sum;
-}
 }
