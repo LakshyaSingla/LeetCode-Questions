@@ -3,9 +3,8 @@ class Solution {
         int low = 1, high = x;
         while(low <= high){
             int mid = low + (high - low) / 2;
-            long val = (long)mid * (long)mid;
-            
-            if(val <= x){
+            long val = (long) mid * (long) mid;
+            if(val <= (long) x){
                 low = mid + 1;
             }else{
                 high = mid - 1;
