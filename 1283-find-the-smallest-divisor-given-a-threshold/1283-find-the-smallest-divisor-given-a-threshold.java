@@ -1,19 +1,17 @@
 class Solution {
-    boolean isPossible(int mid, int[] nums, int threshold){
+    boolean isPossible(int mid, int[] nums, int k){
         int sum = 0;
         for(int i = 0; i < nums.length; i++){
-            sum += Math.ceil((double) nums[i] / (double) mid);
-            if(sum > threshold) break;
+            sum += Math.ceil((double) nums[i]/ (double) mid);
+            if(sum > k) return false;
         }
-        return sum <= threshold;
+        return sum <= k;
     }
     public int smallestDivisor(int[] nums, int threshold) {
-        int low = 1;
-        int maxi = 0;
+        int low = 1, high = 0;
         for(int num : nums){
-            maxi = Math.max(maxi, num);
+            high = Math.max(high, num);
         }
-        int high = maxi;
         while(low <= high){
             int mid = low + (high - low) / 2;
             if(isPossible(mid, nums, threshold)){
