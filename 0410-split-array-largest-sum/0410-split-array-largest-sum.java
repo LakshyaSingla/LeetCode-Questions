@@ -5,22 +5,22 @@ class Solution {
             if(sum + nums[i] <= mid){
                 sum += nums[i];
             }else{
-                sum = nums[i];
                 count++;
+                sum = nums[i];
             }
         }
         return count <= k;
     }
     public int splitArray(int[] nums, int k) {
-        int n = nums.length;
-        if(k > n) return -1;
-        int low = Integer.MIN_VALUE, high = 0;
+        if(nums.length < k) return -1;
+        int low = nums[0], high = 0;
         for(int num : nums){
-            low = Math.max(num, low);
+            low = Math.max(low, num);
             high += num;
         }
         while(low <= high){
             int mid = low + (high - low) / 2;
+            
             if(isPossible(mid, nums, k)){
                 high = mid - 1;
             }else{
