@@ -6,16 +6,13 @@ class Solution {
                 count++;
                 lastBall = position[i];
             }
-        }
+        } 
         return count >= m;
     }
     public int maxDistance(int[] position, int m) {
-        if(m > position.length) return -1;
-        int n = position.length;
         Arrays.sort(position);
-        int low = 1;
-        int high = position[n-1] - position[0];
-
+        int n = position.length;
+        int low = 1, high = position[n-1] - position[0];
         while(low <= high){
             int mid = low + (high - low) / 2;
             if(isPossible(mid, position, m)){
@@ -25,5 +22,6 @@ class Solution {
             }
         }
         return high;
+        
     }
 }
