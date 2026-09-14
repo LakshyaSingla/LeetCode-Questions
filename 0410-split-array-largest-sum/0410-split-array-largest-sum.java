@@ -12,15 +12,15 @@ class Solution {
         return count <= k;
     }
     public int splitArray(int[] nums, int k) {
-        if(nums.length < k) return -1;
         int low = nums[0], high = 0;
+        int n = nums.length;
+        if(n < k) return -1;
         for(int num : nums){
             low = Math.max(low, num);
             high += num;
         }
         while(low <= high){
-            int mid = low + (high - low) / 2;
-            
+            int mid = low + (high- low)/ 2;
             if(isPossible(mid, nums, k)){
                 high = mid - 1;
             }else{
