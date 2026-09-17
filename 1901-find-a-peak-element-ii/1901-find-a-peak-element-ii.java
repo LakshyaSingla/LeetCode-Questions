@@ -7,7 +7,7 @@ class Solution {
             int mid = low + (high - low) / 2;
             int maxRow = 0;
             for(int i = 0; i < n; i++){
-                if(mat[maxRow][mid] < mat[i][mid]){
+                if(mat[i][mid] > mat[maxRow][mid]){
                     maxRow = i;
                 }
             }
