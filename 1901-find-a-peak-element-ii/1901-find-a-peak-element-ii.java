@@ -5,8 +5,9 @@ class Solution {
         int low = 0, high = m - 1;
         while(low <= high){
             int mid = low + (high - low) / 2;
+            
             int maxRow = 0;
-            for(int i = 0; i < n; i++){
+            for(int i = 1; i < n; i++){
                 if(mat[i][mid] > mat[maxRow][mid]){
                     maxRow = i;
                 }
