@@ -18,9 +18,9 @@ class Solution {
             if(l1 != null){
                 sum += l1.val;
                 l1 = l1.next;
-            } 
+            }
             if(l2 != null){
-                sum+= l2.val;
+                sum += l2.val;
                 l2 = l2.next;
             }
             curr.next = new ListNode(sum % 10);
@@ -28,10 +28,9 @@ class Solution {
             curr = curr.next;
         }
         if(carry != 0){
-            ListNode node = new ListNode(carry);
-            curr.next = node;
+            ListNode temp = new ListNode(carry);
+            curr.next = temp;
         }
         return dummy.next;
-
     }
 }
