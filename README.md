@@ -196,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0069-sqrtx) |
 | [1248-count-number-of-nice-subarrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1248-count-number-of-nice-subarrays) |
+| [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Quicksort
 |  |
@@ -281,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0090-subsets-ii) |
+| [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 ## Prefix Sum
 |  |
 | ------- |
