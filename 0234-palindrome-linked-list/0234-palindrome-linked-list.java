@@ -25,12 +25,13 @@ class Solution {
         ListNode fast = head;
         ListNode slow = head;
         while(fast.next != null && fast.next.next != null){
-            fast = fast.next.next;
             slow = slow.next;
+            fast= fast.next.next;
         }
-        ListNode newHead = reverseLL(slow.next);
         ListNode first = head;
+        ListNode newHead = reverseLL(slow.next);
         ListNode second = newHead;
+    
         while(second != null){
             if(first.val != second.val){
                 reverseLL(newHead);
