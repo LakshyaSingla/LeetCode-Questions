@@ -101,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0142-linked-list-cycle-ii) |
+| [0148-sort-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0234-palindrome-linked-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0234-palindrome-linked-list) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
@@ -140,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0018-4sum) |
 | [0075-sort-colors](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0088-merge-sorted-array) |
+| [0148-sort-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
@@ -152,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0053-maximum-subarray](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0053-maximum-subarray) |
+| [0148-sort-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0169-majority-element) |
 | [0240-search-a-2d-matrix-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
@@ -228,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Merge Sort
 |  |
 | ------- |
+| [0148-sort-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0148-sort-list) |
 | [0493-reverse-pairs](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0493-reverse-pairs) |
 ## Ordered Set
 |  |
@@ -365,6 +369,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0061-rotate-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0142-linked-list-cycle-ii) |
+| [0148-sort-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0206-reverse-linked-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0234-palindrome-linked-list) |
