@@ -10,21 +10,23 @@
  */
 class Solution {
     ListNode reverseLL(ListNode head){
-        ListNode curr = head;
+        ListNode temp = head;
         ListNode prev = null;
-        while(curr != null){
-            ListNode front = curr.next;
-            curr.next = prev;
-            prev=  curr;
-            curr = front;
+        while(temp != null){
+            ListNode front = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = front;
         }
         return prev;
     }
-    ListNode findKthNode(ListNode temp, int k){
+    ListNode findkthnode(ListNode head, int k){
         int count = 1;
-        while(temp != null && count < k ){
-            count++;
+        ListNode temp = head;
+        while(temp != null){
+            if(count == k) break;
             temp = temp.next;
+            count++;
         }
         return temp;
     }
@@ -32,24 +34,22 @@ class Solution {
         ListNode temp = head;
         ListNode prevNode = null;
         while(temp != null){
-            ListNode kthNode = findKthNode(temp, k);
-            if(kthNode == null){
-                if(prevNode != null){
-                    prevNode.next = temp;
-                }
+            ListNode KthNode = findkthnode(temp, k);
+            if(KthNode == null){
+                if(prevNode != null) prevNode.next = temp;
                 break;
             }
-                ListNode nextNode = kthNode.next;
-                kthNode.next = null;
-                reverseLL(temp);
-                if(temp == head){
-                    head = kthNode;
-                    
-                }else{
-                    prevNode.next = kthNode; 
+            ListNode nextNode = KthNode.next;
+            KthNode.next = null;
+            reverseLL(temp);
+            if(temp == head){
+                head = KthNode;
+                
+            }else{
+                prevNode.next = KthNode;
             }
             prevNode = temp;
-            temp = nextNode;
+                temp= nextNode;
         }
         return head;
     }
