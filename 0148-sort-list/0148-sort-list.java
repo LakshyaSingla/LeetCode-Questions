@@ -26,6 +26,7 @@ class Solution {
         if(list1 != null) curr.next = list1;
         else curr.next = list2;
         return dummy.next;
+
     }
     ListNode findMiddle(ListNode head){
         ListNode slow = head;
@@ -42,7 +43,6 @@ class Solution {
         ListNode right = middle.next;
         middle.next = null;
         ListNode left = head;
-
         left = sortList(left);
         right = sortList(right);
         return mergeLL(left, right);
