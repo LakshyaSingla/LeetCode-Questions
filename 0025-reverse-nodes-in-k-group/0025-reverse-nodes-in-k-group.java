@@ -10,23 +10,22 @@
  */
 class Solution {
     ListNode reverseLL(ListNode head){
-        ListNode temp = head;
+        ListNode curr = head;
         ListNode prev = null;
-        while(temp != null){
-            ListNode front = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = front;
+        while(curr != null){
+            ListNode front = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = front;
         }
         return prev;
     }
-    ListNode findkthnode(ListNode head, int k){
+    ListNode findKthNode(ListNode head, int k){
         int count = 1;
         ListNode temp = head;
-        while(temp != null){
-            if(count == k) break;
-            temp = temp.next;
+        while(temp != null && count != k){
             count++;
+            temp = temp.next;
         }
         return temp;
     }
@@ -34,22 +33,22 @@ class Solution {
         ListNode temp = head;
         ListNode prevNode = null;
         while(temp != null){
-            ListNode KthNode = findkthnode(temp, k);
-            if(KthNode == null){
+            ListNode KthNode = findKthNode(temp, k);
+            if(KthNode != null){
+                ListNode nextNode = KthNode.next;
+                KthNode.next = null; 
+                reverseLL(temp);
+                if(temp == head){
+                    head = KthNode;
+                }else{
+                    prevNode.next = KthNode;
+                }
+                prevNode = temp;
+                temp = nextNode;
+            }else{
                 if(prevNode != null) prevNode.next = temp;
                 break;
             }
-            ListNode nextNode = KthNode.next;
-            KthNode.next = null;
-            reverseLL(temp);
-            if(temp == head){
-                head = KthNode;
-                
-            }else{
-                prevNode.next = KthNode;
-            }
-            prevNode = temp;
-                temp= nextNode;
         }
         return head;
     }
