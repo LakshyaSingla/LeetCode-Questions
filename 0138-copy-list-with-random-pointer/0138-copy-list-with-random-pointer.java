@@ -14,9 +14,8 @@ class Node {
 */
 
 class Solution {
-    Node insertCopyNode(Node head){
+    Node insertNode(Node head){
         Node temp = head;
-
         while(temp != null){
             Node copyNode = new Node(temp.val);
             copyNode.next = temp.next;
@@ -25,18 +24,18 @@ class Solution {
         }
         return head;
     }
-    Node connectRandomPointer(Node head){
+    Node insertRandomPoitner(Node head){
         Node temp = head;
-        while(temp != null){
-            Node copy = temp.next;
 
-            if(temp.random != null) copy.random = temp.random.next;
-            else copy.random = null;
+        while(temp != null){
+            Node copyNode = temp.next;
+            if(temp.random != null) copyNode.random = temp.random.next;
+            else copyNode.random = null;
             temp = temp.next.next;
         }
         return head;
     }
-    Node CopyLL(Node head){
+    Node copyLL(Node head){
         Node dummy = new Node(-1);
         Node curr = dummy;
         Node temp = head;
@@ -44,14 +43,15 @@ class Solution {
             curr.next = temp.next;
             curr = curr.next;
             temp.next = temp.next.next;
-            temp = temp.next; 
+            temp = temp.next;
         }
         return dummy.next;
     }
     public Node copyRandomList(Node head) {
-        if(head == null )return null;
-        insertCopyNode(head);
-        connectRandomPointer(head);
-        return CopyLL(head);
+        if(head == null) return null;
+
+        insertNode(head);
+        insertRandomPoitner(head);
+        return copyLL(head);
     }
 }
