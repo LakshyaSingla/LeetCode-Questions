@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0169-majority-element) |
+| [0189-rotate-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0189-rotate-array) |
 | [0216-combination-sum-iii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0216-combination-sum-iii) |
 | [0229-majority-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0229-majority-element-ii) |
 | [0240-search-a-2d-matrix-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0240-search-a-2d-matrix-ii) |
@@ -111,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0160-intersection-of-two-linked-lists) |
+| [0189-rotate-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0234-palindrome-linked-list) |
 | [0349-intersection-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -210,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0069-sqrtx) |
+| [0189-rotate-array](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0189-rotate-array) |
 | [1248-count-number-of-nice-subarrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
