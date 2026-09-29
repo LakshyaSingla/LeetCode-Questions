@@ -15,7 +15,7 @@ class MinStack {
             return;
         }
 
-        if (val >= min) {
+        if (val > min) {
             st.push(val);
         } else {
             st.push(2 * val - min);
