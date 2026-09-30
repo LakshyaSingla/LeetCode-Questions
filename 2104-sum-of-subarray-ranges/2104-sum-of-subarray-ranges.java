@@ -1,8 +1,8 @@
 class Solution {
-    int[] findPSEE(int[] nums){
+    int[] PSEE(int[] nums){
+        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
-        Stack<Integer> st = new Stack<>();
         for(int i = 0; i < n; i++){
             while(!st.isEmpty() && nums[st.peek()] > nums[i]){
                 st.pop();
@@ -13,10 +13,10 @@ class Solution {
         }
         return ans;
     }
-    int[] findPGEE(int[] nums){
+    int[] PGEE(int[] nums){
+        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
-        Stack<Integer> st = new Stack<>();
         for(int i = 0; i < n; i++){
             while(!st.isEmpty() && nums[st.peek()] < nums[i]){
                 st.pop();
@@ -27,11 +27,11 @@ class Solution {
         }
         return ans;
     }
-    int[] findNSE(int[] nums){
+    int[] NSE(int[] nums){
+        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
-        Stack<Integer> st = new Stack<>();
-        for(int i = n- 1; i>= 0; i--){
+        for(int i = n - 1; i >= 0; i--){
             while(!st.isEmpty() && nums[st.peek()] >= nums[i]){
                 st.pop();
             }
@@ -41,10 +41,10 @@ class Solution {
         }
         return ans;
     }
-    int[] findNGE(int[] nums){
+    int[] NGE(int[] nums){
+        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
-        Stack<Integer> st = new Stack<>();
         for(int i = n - 1; i >= 0; i--){
             while(!st.isEmpty() && nums[st.peek()] <= nums[i]){
                 st.pop();
@@ -56,35 +56,30 @@ class Solution {
         return ans;
     }
     long subArrayMin(int[] nums){
-    int[] NSE = findNSE(nums); 
-    int[] PSEE = findPSEE(nums);
-    int n = nums.length;
-    long sum = 0;
-    for(int i = 0; i < n; i++){
-        long left = i - PSEE[i];
-        long right = NSE[i] - i;
-        long freq = left * right;
-        long val = freq * nums[i];
-        sum += val;
-    }
-    return sum;
+        int[] PSEE = PSEE(nums);
+        int[] NSE = NSE(nums);
+        long sum = 0;
+        for(int i = 0; i < nums.length; i++){
+            long left = i - PSEE[i];
+            long right = NSE[i] - i;
+            long val = (left * right) * nums[i];
+            sum += val;
+        }
+        return sum;
     }
     long subArrayMax(int[] nums){
-    int[] NGE = findNGE(nums); 
-    int[] PGEE = findPGEE(nums);
-    int n = nums.length;
-    long sum = 0;
-    for(int i = 0; i < n; i++){
-        long left = i - PGEE[i];
-        long right = NGE[i] - i;
-        long freq = left * right;
-        long val = freq * nums[i];
-        sum += val;
-    }
-    return sum;
+        int[] PGEE = PGEE(nums);
+        int[] NGE = NGE(nums);
+        long sum = 0;
+        for(int i = 0; i < nums.length; i++){
+            long left = i - PGEE[i];
+            long right = NGE[i] - i;
+            long val = (left * right) * nums[i];
+            sum += val;
+        }
+        return sum;
     }
     public long subArrayRanges(int[] nums) {
-        
-       return subArrayMax(nums) - subArrayMin(nums);
+        return subArrayMax(nums) - subArrayMin(nums);
     }
 }
