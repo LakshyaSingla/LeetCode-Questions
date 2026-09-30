@@ -6,10 +6,9 @@ class Solution {
                 st.push(ch);
             }else{
                 if(st.isEmpty()) return false;
-                char top = st.pop();
-                if((top == '(' && ch == ')')||
-                (top == '{' && ch == '}')||
-                (top == '[' && ch == ']')
+                if((ch == ')' && st.pop() == '(') || 
+                    (ch == '}' && st.pop() == '{') ||
+                    (ch == ']' && st.pop() == '[') 
                 ){
                     continue;
                 }else{
