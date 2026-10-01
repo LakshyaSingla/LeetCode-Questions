@@ -1,8 +1,7 @@
 class Solution {
     public String removeKdigits(String num, int k) {
-        Stack<Character> st = new Stack<>();
         int n = num.length();
-        int count = 0;
+        Stack<Character> st = new Stack<>();
         for(int i = 0; i < n; i++){
             while(!st.isEmpty() && k > 0 && st.peek() > num.charAt(i)){
                 st.pop();
@@ -10,6 +9,7 @@ class Solution {
             }
             st.push(num.charAt(i));
         }
+
         while(!st.isEmpty() && k > 0){
             st.pop();
             k--;
@@ -25,5 +25,6 @@ class Solution {
         sb.reverse();
         if(sb.length() == 0) return "0";
         return sb.toString();
+        
     }
 }
