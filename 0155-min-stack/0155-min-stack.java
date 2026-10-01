@@ -1,5 +1,5 @@
 class MinStack {
-    Stack<Integer> st;
+    Stack<Long> st;
     long min;
     public MinStack() {
         st = new Stack<>();
