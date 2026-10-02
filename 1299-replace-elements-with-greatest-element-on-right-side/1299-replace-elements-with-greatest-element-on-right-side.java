@@ -1,16 +1,18 @@
 class Solution {
     public int[] replaceElements(int[] arr) {
-        int max = -1;
         int n = arr.length;
-        for(int i = n - 1; i >=0 ; i--){
+        int[] ans = new int[n];
+        ans[n - 1] = -1;
+        int max = arr[n - 1];
+        for(int i = n - 2;i >=0; i--){
             if(arr[i] > max){
-                int temp = max;
+                ans[i] = max;
                 max = arr[i];
-                arr[i] = temp;
             }else{
-                arr[i] = max;
+                ans[i] = max;
             }
+            
         }
-        return arr;
+        return ans;
     }
 }
