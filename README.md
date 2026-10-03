@@ -192,6 +192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0054-spiral-matrix) |
 | [0735-asteroid-collision](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0735-asteroid-collision) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2149-rearrange-array-elements-by-sign) |
+| [2211-count-collisions-on-a-road](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2211-count-collisions-on-a-road) |
 ## Matrix
 |  |
 | ------- |
@@ -295,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0678-valid-parenthesis-string) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [2211-count-collisions-on-a-road](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2211-count-collisions-on-a-road) |
 ## Backtracking
 |  |
 | ------- |
@@ -361,6 +363,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0901-online-stock-span](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0907-sum-of-subarray-minimums) |
 | [2104-sum-of-subarray-ranges](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2104-sum-of-subarray-ranges) |
+| [2211-count-collisions-on-a-road](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2211-count-collisions-on-a-road) |
 ## Dancing Links
 |  |
 | ------- |
