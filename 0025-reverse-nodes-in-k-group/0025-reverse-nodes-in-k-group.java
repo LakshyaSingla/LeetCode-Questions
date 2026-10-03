@@ -21,34 +21,35 @@ class Solution {
         return prev;
     }
     ListNode findKthNode(ListNode head, int k){
-        int count = 1;
         ListNode temp = head;
-        while(temp != null && count != k){
-            count++;
+        int count = 1;
+        while(temp != null && count < k){
             temp = temp.next;
+            count++;
         }
-        return temp;
+        if(count == k) return temp;
+        return null;
     }
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode temp = head;
         ListNode prevNode = null;
         while(temp != null){
-            ListNode KthNode = findKthNode(temp, k);
-            if(KthNode != null){
-                ListNode nextNode = KthNode.next;
-                KthNode.next = null; 
-                reverseLL(temp);
-                if(temp == head){
-                    head = KthNode;
-                }else{
-                    prevNode.next = KthNode;
-                }
-                prevNode = temp;
-                temp = nextNode;
-            }else{
+            ListNode kthNode = findKthNode(temp, k);
+            if(kthNode == null){
                 if(prevNode != null) prevNode.next = temp;
                 break;
             }
+            ListNode nextNode = kthNode.next;
+            kthNode.next = null;
+            reverseLL(temp);
+            if(temp == head){
+                head = kthNode;
+            }else{
+                prevNode.next = kthNode;
+            }
+            prevNode = temp;
+            temp = nextNode;
+
         }
         return head;
     }
