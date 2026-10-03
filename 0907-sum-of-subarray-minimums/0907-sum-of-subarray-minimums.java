@@ -1,8 +1,9 @@
 class Solution {
     int[] PSEE(int[] arr){
-        int n =arr.length;
-        Stack<Integer> st = new Stack<>();
+        int n = arr.length;
         int[] ans = new int[n];
+
+        Stack<Integer> st = new Stack<>();
         for(int i = 0; i < n; i++){
             while(!st.isEmpty() && arr[st.peek()] > arr[i]){
                 st.pop();
@@ -14,10 +15,11 @@ class Solution {
         return ans;
     }
     int[] NSE(int[] arr){
-        int n =arr.length;
-        Stack<Integer> st = new Stack<>();
+        int n = arr.length;
         int[] ans = new int[n];
-        for(int i = n - 1; i >= 0; i--){
+
+        Stack<Integer> st = new Stack<>();
+        for(int i = n - 1; i >=0; i--){
             while(!st.isEmpty() && arr[st.peek()] >= arr[i]){
                 st.pop();
             }
@@ -28,12 +30,11 @@ class Solution {
         return ans;
     }
     public int sumSubarrayMins(int[] arr) {
-        long sum = 0;
-        int n = arr.length;
-        int mod = (int)1e9 + 7;
         int[] PSEE = PSEE(arr);
         int[] NSE = NSE(arr);
-
+        int n = arr.length;
+        int mod = (int)1e9 + 7;
+        long sum = 0;
         for(int i = 0; i < n; i++){
             long left = i - PSEE[i];
             long right = NSE[i] - i;
@@ -41,6 +42,6 @@ class Solution {
             long val = (arr[i] * freq) % mod;
             sum = (sum + val) % mod;
         }
-        return (int) sum;
+        return (int)sum;
     }
 }
