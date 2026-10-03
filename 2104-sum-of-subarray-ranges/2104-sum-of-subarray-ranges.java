@@ -1,8 +1,8 @@
 class Solution {
     int[] PSEE(int[] nums){
-        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
+        Stack<Integer> st = new Stack<>();
         for(int i = 0; i < n; i++){
             while(!st.isEmpty() && nums[st.peek()] > nums[i]){
                 st.pop();
@@ -14,9 +14,9 @@ class Solution {
         return ans;
     }
     int[] PGEE(int[] nums){
-        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
+        Stack<Integer> st = new Stack<>();
         for(int i = 0; i < n; i++){
             while(!st.isEmpty() && nums[st.peek()] < nums[i]){
                 st.pop();
@@ -28,9 +28,9 @@ class Solution {
         return ans;
     }
     int[] NSE(int[] nums){
-        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
+        Stack<Integer> st = new Stack<>();
         for(int i = n - 1; i >= 0; i--){
             while(!st.isEmpty() && nums[st.peek()] >= nums[i]){
                 st.pop();
@@ -42,10 +42,10 @@ class Solution {
         return ans;
     }
     int[] NGE(int[] nums){
-        Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] ans = new int[n];
-        for(int i = n - 1; i >= 0; i--){
+        Stack<Integer> st = new Stack<>();
+        for(int i = n - 1; i >=0; i--){
             while(!st.isEmpty() && nums[st.peek()] <= nums[i]){
                 st.pop();
             }
@@ -58,11 +58,12 @@ class Solution {
     long subArrayMin(int[] nums){
         int[] PSEE = PSEE(nums);
         int[] NSE = NSE(nums);
+        int n = nums.length;
         long sum = 0;
-        for(int i = 0; i < nums.length; i++){
+        for(int i = 0; i < n; i++){
             long left = i - PSEE[i];
             long right = NSE[i] - i;
-            long val = (left * right) * nums[i];
+            long val = nums[i] * (right * left);
             sum += val;
         }
         return sum;
@@ -70,15 +71,17 @@ class Solution {
     long subArrayMax(int[] nums){
         int[] PGEE = PGEE(nums);
         int[] NGE = NGE(nums);
+        int n = nums.length;
         long sum = 0;
-        for(int i = 0; i < nums.length; i++){
+        for(int i = 0; i < n; i++){
             long left = i - PGEE[i];
             long right = NGE[i] - i;
-            long val = (left * right) * nums[i];
+            long val = nums[i] * (right * left);
             sum += val;
         }
         return sum;
     }
+
     public long subArrayRanges(int[] nums) {
         return subArrayMax(nums) - subArrayMin(nums);
     }
