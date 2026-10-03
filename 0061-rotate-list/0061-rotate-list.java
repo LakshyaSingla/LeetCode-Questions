@@ -16,17 +16,18 @@ class Solution {
             len++;
             tail = tail.next;
         }
-        k = (k % len);
+        k = k % len;
         if(k == 0) return head;
         tail.next = head;
-        ListNode temp = head;
+
         int count = 1;
-        while(len - k != count){
+        ListNode temp = head;
+        while(temp != null && count < len - k){
             count++;
             temp = temp.next;
         }
-        head = temp.next;
+        ListNode front = temp.next;
         temp.next = null;
-        return head;
+        return front;
     }
 }
