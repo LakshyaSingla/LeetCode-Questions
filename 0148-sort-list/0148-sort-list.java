@@ -10,18 +10,17 @@
  */
 class Solution {
     ListNode mergeLL(ListNode l1, ListNode l2){
-        ListNode dummy = new ListNode(-1);
+        ListNode dummy = new ListNode();
         ListNode curr = dummy;
         while(l1 != null && l2 != null){
-            if(l1.val < l2.val){
+            if(l1.val <= l2.val){
                 curr.next = l1;
-                curr = curr.next;
                 l1 = l1.next;
             }else{
                 curr.next = l2;
-                curr = curr.next;
                 l2 = l2.next;
             }
+            curr = curr.next;
         }
         if(l1 != null) curr.next = l1;
         else curr.next = l2;
@@ -35,11 +34,14 @@ class Solution {
             slow = slow.next;
             fast = fast.next.next;
         }
-        ListNode second = slow.next;
+        
+        ListNode left = head;
+        ListNode right = slow.next;
         slow.next = null;
-        ListNode first = head;
-        first = sortList(first);
-        second = sortList(second);
-        return mergeLL(first, second);
+
+        left = sortList(left);
+        right = sortList(right);
+        return mergeLL(left, right);
+        
     }
 }
