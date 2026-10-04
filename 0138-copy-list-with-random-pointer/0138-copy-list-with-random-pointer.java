@@ -14,23 +14,21 @@ class Node {
 */
 
 class Solution {
-    Node insertNode(Node head){
+    Node insertele(Node head){
         Node temp = head;
         while(temp != null){
-            Node copyNode = new Node(temp.val);
-            copyNode.next = temp.next;
-            temp.next = copyNode;
-            temp = temp.next.next;
+            Node nextNode = temp.next;
+            temp.next =  new Node(temp.val);
+            temp.next.next = nextNode;
+            temp = nextNode;
         }
         return head;
     }
-    Node insertRandomPoitner(Node head){
+    Node insertRandom(Node head){
         Node temp = head;
-
         while(temp != null){
             Node copyNode = temp.next;
-            if(temp.random != null) copyNode.random = temp.random.next;
-            else copyNode.random = null;
+            copyNode.random = (temp.random != null) ? temp.random.next : null;
             temp = temp.next.next;
         }
         return head;
@@ -46,12 +44,12 @@ class Solution {
             temp = temp.next;
         }
         return dummy.next;
+        
     }
     public Node copyRandomList(Node head) {
         if(head == null) return null;
-
-        insertNode(head);
-        insertRandomPoitner(head);
+        insertele(head);
+        insertRandom(head);
         return copyLL(head);
     }
 }
