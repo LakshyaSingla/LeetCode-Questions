@@ -1,71 +1,68 @@
 class Node{
     int key, value;
-    Node prev, next;
-    
+    Node next, prev;
     Node(){
-        key = value = -1;
-        prev = null;
-        next = null;
+        key = value = 0;
+        next = prev = null;
     }
     Node(int key, int value){
         this.key = key;
         this.value = value;
-        prev = next = null;
+        next = prev= null;
     }
 }
 class LRUCache {
-    Map<Integer, Node> mpp;
+    Map<Integer, Node> keyNode;
+    Node head, tail;
     int capacity;
-    Node head;
-    Node tail;
     public LRUCache(int capacity) {
-        mpp = new HashMap<>();
         this.capacity = capacity;
+        keyNode = new HashMap<>();
         head = new Node();
         tail = new Node();
         head.next = tail;
         tail.prev = head;
     }
-    void insertAfterHead(Node node){
-        Node currafterhead = head.next;
+    void addFront(Node node){
+        Node front = head.next;
         head.next = node;
         node.prev = head;
-        node.next = currafterhead;
-        currafterhead.prev = node;
+        node.next = front;
+        front.prev = node;
     }
-    void deletenode(Node node){
+    void deleteNode(Node node){
         Node nextNode = node.next;
         Node prevNode = node.prev;
-        prevNode.next = nextNode;
         nextNode.prev = prevNode;
+        prevNode.next = nextNode;
     }
+    
     public int get(int key) {
-        if(!mpp.containsKey(key)) return -1;
+        if(!keyNode.containsKey(key)) return -1;
 
-        Node node = mpp.get(key);
-        deletenode(node);
-        insertAfterHead(node);
-        return node.value;
+        Node node = keyNode.get(key);
+        int val = node.value;
+        deleteNode(node);
+        addFront(node);
+        return val;
     }
     
     public void put(int key, int value) {
-        if(mpp.containsKey(key)){
-            Node node = mpp.get(key);
+        if(keyNode.containsKey(key)){
+            Node node = keyNode.get(key);
             node.value = value;
-            deletenode(node);
-            insertAfterHead(node);
+            deleteNode(node);
+            addFront(node);
             return;
         }
-
-        if(mpp.size() == capacity){
+        if(keyNode.size() == capacity){
             Node node = tail.prev;
-            mpp.remove(node.key);
-            deletenode(node);
+            keyNode.remove(node.key);
+            deleteNode(node);
         }
         Node newNode = new Node(key, value);
-        mpp.put(key, newNode);
-        insertAfterHead(newNode);
-
+        addFront(newNode);
+        keyNode.put(key, newNode);
     }
 }
 
