@@ -1,77 +1,72 @@
 class Node{
     int key, value, count;
     Node next, prev;
-
-    Node(){
-        key = value = 0;
-        next = prev= null;
-    }
     Node(int key, int value){
         this.key = key;
         this.value = value;
-        count = 1;
         next = prev = null;
+        count = 1;
     }
 }
-class DoublyList{
+class DoublyLL{
     Node head, tail;
     int size;
-    DoublyList(){
-        head = new Node();
-        tail = new Node();
+    DoublyLL(){
+        size = 0;
+        head = new Node(0, 0);
+        tail = new Node(0, 0);
         head.next = tail;
         tail.prev = head;
-        size = 0;
     }
     void addFront(Node node){
-        Node front = head.next;
+        Node nextNode = head.next;
         head.next = node;
         node.prev = head;
-        front.prev = node;
-        node.next = front;
+        nextNode.prev = node;
+        node.next = nextNode;
         size++;
     }
     void deleteNode(Node node){
         Node front = node.next;
-        Node back =  node.prev;
-        front.prev = back;
+        Node back = node.prev;
         back.next = front;
+        front.prev = back;
         size--;
     }
 }
 class LFUCache {
-    int capacity;
+    Map<Integer, DoublyLL> freqListMap;
     Map<Integer, Node> keyNode;
-    Map<Integer, DoublyList> freqListMap;
-    int minfreq, currsize;
-
+    int capacity;
+    int minfreq;
+    int currsize;
     public LFUCache(int capacity) {
         this.capacity = capacity;
-        keyNode = new HashMap<>();
-        freqListMap = new HashMap<>();
         minfreq = currsize = 0;
+        freqListMap = new HashMap<>();
+        keyNode = new HashMap<>();
     }
-    void updatefreqList(Node node){
+    void updateFreq(Node node){
         keyNode.remove(node.key);
         freqListMap.get(node.count).deleteNode(node);
-        if(node.count == minfreq && freqListMap.get(node.count).size == 0){
-            minfreq++;
+        if(node.count == minfreq && freqListMap.get(minfreq).size == 0){
+            minfreq += 1;
         }
-        DoublyList nextfreq = new DoublyList();
+
+        DoublyLL list = new DoublyLL();
         if(freqListMap.containsKey(node.count + 1)){
-            nextfreq = freqListMap.get(node.count + 1);
+            list = freqListMap.get(node.count + 1);
         }
         node.count += 1;
-        nextfreq.addFront(node);
+        list.addFront(node);
         keyNode.put(node.key, node);
-        freqListMap.put(node.count, nextfreq);
+        freqListMap.put(node.count, list);
     }
     public int get(int key) {
         if(!keyNode.containsKey(key)) return -1;
-
         Node node = keyNode.get(key);
         int val = node.value;
-        updatefreqList(node);
+        updateFreq(node);
         return val;
     }
     
@@ -80,26 +75,25 @@ class LFUCache {
         if(keyNode.containsKey(key)){
             Node node = keyNode.get(key);
             node.value = value;
-            updatefreqList(node);
+            updateFreq(node);
             return;
         }
-
         if(currsize == capacity){
-            DoublyList list = freqListMap.get(minfreq);
+            DoublyLL list = freqListMap.get(minfreq);
             keyNode.remove(list.tail.prev.key);
-            freqListMap.get(minfreq).deleteNode(list.tail.prev);
+            freqListMap.get(minfreq).deleteNode(list.tail.prev); 
             currsize--;
         }
         currsize++;
         minfreq = 1;
-        DoublyList minList = new DoublyList();
+        DoublyLL minList = new DoublyLL();
         if(freqListMap.containsKey(minfreq)){
             minList = freqListMap.get(minfreq);
         }
         Node newNode = new Node(key, value);
         minList.addFront(newNode);
-        freqListMap.put(minfreq, minList);
         keyNode.put(key, newNode);
+        freqListMap.put(minfreq, minList);
     }
 }
 
