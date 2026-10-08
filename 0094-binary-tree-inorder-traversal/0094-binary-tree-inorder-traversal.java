@@ -14,18 +14,16 @@
  * }
  */
 class Solution {
-    void func(TreeNode root, List<Integer> ans){
+    void backtrack(TreeNode root, List<Integer> ans){
         if(root == null) return;
 
-        func(root.left, ans);
+        backtrack(root.left, ans);
         ans.add(root.val);
-        func(root.right, ans);
-        
+        backtrack(root.right, ans);
     }
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        
-        func(root, ans);
+        backtrack(root, ans);
         return ans;
     }
 }
