@@ -1,14 +1,14 @@
 class Solution {
     List<Integer> genRow(int row){
-        List<Integer> ans = new ArrayList<>();
-        ans.add(1);
+        List<Integer> temp = new ArrayList<>();
+        temp.add(1);
         long res = 1;
         for(int i = 1; i < row; i++){
             res *= (row - i);
             res /= i;
-            ans.add((int) res);
+            temp.add((int) res);
         }
-        return ans;
+        return temp;
     }
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList<>();
