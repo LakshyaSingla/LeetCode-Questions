@@ -16,6 +16,7 @@
 class Solution {
     void backtrack(TreeNode root, List<Integer> ans){
         if(root == null) return;
+
         backtrack(root.left, ans);
         backtrack(root.right, ans);
         ans.add(root.val);
