@@ -28,7 +28,7 @@ class DoublyLL{
     void addFront(Node node){
         Node front = head.next;
         head.next = node;
-        node.prev = node;
+        node.prev = head;
         node.next= front;
         front.prev = node;
         size++;
