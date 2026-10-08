@@ -16,11 +16,11 @@
 class Solution {
     void backtrack(TreeNode root, List<Integer> ans){
         if(root == null) return;
-
-        ans.add(root.val);
+ans.add(root.val);
         backtrack(root.left, ans);
+        
         backtrack(root.right, ans);
-    } 
+    }
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
         backtrack(root, ans);
