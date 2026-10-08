@@ -6,7 +6,7 @@ class Solution {
         for(int i = 1; i <= rowIndex; i++){
             res *= (rowIndex - i + 1);
             res /= i;
-            ans.add((int) res);
+            ans.add((int)res);
         }
         return ans;
     }
