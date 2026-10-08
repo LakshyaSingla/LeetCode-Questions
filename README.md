@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0055-jump-game) |
 | [0057-insert-interval](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0057-insert-interval) |
+| [0073-set-matrix-zeroes](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0078-subsets) |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0037-sudoku-solver](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0037-sudoku-solver) |
+| [0073-set-matrix-zeroes](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0073-set-matrix-zeroes) |
 | [0076-minimum-window-substring](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0128-longest-consecutive-sequence) |
 | [0138-copy-list-with-random-pointer](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0138-copy-list-with-random-pointer) |
@@ -199,6 +201,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0079-word-search) |
 | [0085-maximal-rectangle](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/0085-maximal-rectangle) |
