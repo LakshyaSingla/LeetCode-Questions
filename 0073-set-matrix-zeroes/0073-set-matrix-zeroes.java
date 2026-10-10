@@ -2,8 +2,10 @@ class Solution {
     public void setZeroes(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
-        
-        boolean firstColZero = false, firstRowZero = false;
+
+        boolean firstRowZero = false;
+        boolean firstColZero = false;
+
         for(int i = 0; i < n; i++){
             if(matrix[i][0] == 0){
                 firstColZero = true;
@@ -40,7 +42,7 @@ class Solution {
         }
         if(firstRowZero){
             for(int i = 0; i < m; i++){
-                matrix[0][i] = 0; 
+                matrix[0][i] = 0;
             }
         }
     }
