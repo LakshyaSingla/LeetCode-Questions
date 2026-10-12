@@ -1,8 +1,8 @@
 class Solution {
     public int maxProduct(int[] nums) {
-        long max = Integer.MIN_VALUE;
-        long prefix = 1, suffix = 1;
+        int prefix = 1, suffix = 1;
         int n = nums.length;
+        int max = Integer.MIN_VALUE;
         for(int i = 0; i < n; i++){
             if(prefix == 0) prefix = 1;
             if(suffix == 0) suffix = 1;
@@ -10,6 +10,6 @@ class Solution {
             suffix *= nums[n - 1 - i];
             max = Math.max(max, Math.max(prefix, suffix));
         }
-        return (int) max;
+        return max;
     }
 }
