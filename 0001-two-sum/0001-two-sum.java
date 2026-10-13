@@ -4,9 +4,9 @@ class Solution {
         Map<Integer, Integer> mpp = new HashMap<>();
 
         for(int i = 0; i < n; i++){
-            int compl = target - nums[i];
-            if(mpp.containsKey(compl)){
-                return new int[]{mpp.get(compl), i};
+            int comp = target - nums[i];
+            if(mpp.containsKey(comp)){
+                return new int[]{mpp.get(comp), i};
             }
             mpp.put(nums[i], i);
         }
