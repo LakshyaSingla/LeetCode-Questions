@@ -20,19 +20,16 @@ class Solution {
             }
         }
 
+        int mini = n / 3 + 1;
         c1 = 0;
         c2 = 0;
         for(int i = 0; i < n; i++){
-            if(nums[i] == ele1){
-                c1++;
-            }else if(nums[i] == ele2){
-                c2++;
-            }
+            if(nums[i] == ele1) c1++;
+            if(nums[i] == ele2) c2++;
         }
         List<Integer> ans = new ArrayList<>();
-        int min = n /3 + 1;
-        if(c1 >= min) ans.add(ele1);
-        if(c2 >= min) ans.add(ele2);
+        if(c1 >= mini) ans.add(ele1);
+        if(c2 >= mini) ans.add(ele2);
         return ans;
     }
 }
