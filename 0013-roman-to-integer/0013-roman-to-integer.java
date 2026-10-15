@@ -8,14 +8,13 @@ class Solution {
         mpp.put('C', 100);
         mpp.put('D', 500);
         mpp.put('M', 1000);
+        int total = 0;
         int n = s.length();
-        int total=0;
-        for(int i = 0; i < n; i++){
-            char c = s.charAt(i);
-            if(i < n - 1 && mpp.get(c) < mpp.get(s.charAt(i + 1))){
-                total -= mpp.get(c);
+        for(int i = 0; i < n ; i++){
+            if(i < n - 1 && mpp.get(s.charAt(i)) < mpp.get(s.charAt(i + 1))){
+                total -= mpp.get(s.charAt(i));
             }else{
-                total += mpp.get(c);
+                total += mpp.get(s.charAt(i));
             }
         }
         return total;
