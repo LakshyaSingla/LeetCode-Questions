@@ -11,18 +11,17 @@ class Solution {
         }else if(i < n && s.charAt(i) == '+'){
             i++;
         }
-
         long res = 0;
         while(i < n && Character.isDigit(s.charAt(i))){
-            res = res * 10 + (s.charAt(i) - '0');
+            res = res* 10 + (s.charAt(i) - '0');
             i++;
-            if(res * sign <= Integer.MIN_VALUE){
+            if(sign * res <= Integer.MIN_VALUE){
                 return Integer.MIN_VALUE;
-            }else if(res * sign >= Integer.MAX_VALUE){
+            }else if(sign * res >= Integer.MAX_VALUE){
                 return Integer.MAX_VALUE;
             }
 
-        } 
-        return (int) (res * sign);
+        }
+        return (int) (sign * res);
     }
 }
