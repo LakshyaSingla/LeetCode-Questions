@@ -2,9 +2,8 @@ class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         int n = strs.length;
         List<List<String>> ans = new ArrayList<>();
-        if(strs == null || strs.length == 0) return ans;
+        if(strs == null || n == 0) return ans;
         Map<String, List<String>> mpp = new HashMap<>();
-
         for(String s : strs){
             char[] ch = s.toCharArray();
             Arrays.sort(ch);
@@ -14,8 +13,9 @@ class Solution {
             }
             mpp.get(key).add(s);
         }
-        for(Map.Entry<String, List<String>> entry : mpp.entrySet()){
-            ans.add(entry.getValue());
+
+        for(List<String> ls : mpp.values()){
+            ans.add(ls);
         }
         return ans;
     }
