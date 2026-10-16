@@ -1,28 +1,28 @@
 class Solution {
-    boolean isPossible(int mid, int[] bloomDay, int m, int k){
-        int count = 0, noOfB = 0;
+    int noOfB(int[] bloomDay, int k, int mid){
+        int count = 0, sum = 0;
         for(int i = 0; i < bloomDay.length; i++){
             if(bloomDay[i] <= mid){
                 count++;
             }else{
-                noOfB += count / k;
+                sum += count / k;
                 count = 0;
             }
         }
-        noOfB += count / k;
-        return noOfB >= m;
-
+        sum += count / k;
+        return sum;
     }
     public int minDays(int[] bloomDay, int m, int k) {
-        int low = Integer.MAX_VALUE, high = 0;
-        if(bloomDay.length < (long) m * k) return -1;
+        int n = bloomDay.length;
+        if((long) m * k > n) return -1;
+        int low = Integer.MAX_VALUE, high = Integer.MIN_VALUE;
         for(int num : bloomDay){
             low = Math.min(low, num);
             high = Math.max(high, num);
         }
         while(low <= high){
             int mid = low + (high - low) / 2;
-            if(isPossible(mid, bloomDay, m, k)){
+            if(noOfB(bloomDay, k, mid) >= m){
                 high = mid - 1;
             }else{
                 low = mid + 1;
