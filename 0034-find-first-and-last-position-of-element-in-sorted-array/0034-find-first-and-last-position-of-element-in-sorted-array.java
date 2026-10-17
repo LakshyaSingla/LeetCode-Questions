@@ -1,5 +1,5 @@
 class Solution {
-    int firstOccurence(int[] nums, int k){
+    int first(int[] nums, int k){
         int low = 0, high = nums.length - 1;
         int ans = -1;
         while(low <= high){
@@ -15,7 +15,7 @@ class Solution {
         }
         return ans;
     }
-    int lastOccurence(int[] nums, int k){
+    int last(int[] nums, int k){
         int low = 0, high = nums.length - 1;
         int ans = -1;
         while(low <= high){
@@ -31,10 +31,11 @@ class Solution {
         }
         return ans;
     }
+
     public int[] searchRange(int[] nums, int target) {
-        int first = firstOccurence(nums, target);
+        int first = first(nums, target);
         if(first == -1) return new int[]{-1, -1};
-        int last = lastOccurence(nums, target);
+        int last = last(nums, target);
         return new int[]{first, last};
     }
 }
