@@ -1,19 +1,20 @@
 class Solution {
-    int hour(int[] piles, int mid){
+    boolean isPossible(int[] piles, int mid, int h){
         int sum = 0;
-        for(int num : piles){
-            sum += Math.ceil((double) num / (double) mid);
+        for(int pile : piles){
+            sum += Math.ceil((double) pile / (double) mid);
         }
-        return sum;
+        return sum <= h;
     }
     public int minEatingSpeed(int[] piles, int h) {
+        int n = piles.length;
         int low = 1, high = 0;
-        for(int num : piles){
-            high = Math.max(high, num);
-        }
+        for(int pile : piles){
+            high = Math.max(pile, high);
+        }   
         while(low <= high){
             int mid = low + (high - low) / 2;
-            if(hour(piles, mid) <= h){
+            if(isPossible(piles, mid, h)){
                 high = mid - 1;
             }else{
                 low = mid + 1;
