@@ -1,10 +1,10 @@
 class Solution {
-    int limit(int[] nums, int mid){
+    boolean isPossible(int[] nums, int mid, int k){
         int sum = 0;
-        for(int i = 0; i < nums.length; i++){
-            sum += Math.ceil((double) nums[i] / (double) mid);
+        for(int num : nums){
+            sum += Math.ceil((double) num/ (double) mid);
         }
-        return sum;
+        return sum <= k;
     }
     public int smallestDivisor(int[] nums, int threshold) {
         int low = 1, high = 0;
@@ -13,7 +13,7 @@ class Solution {
         }
         while(low <= high){
             int mid = low + (high - low) / 2;
-            if(limit(nums, mid) <= threshold){
+            if(isPossible(nums, mid, threshold)){
                 high = mid - 1;
             }else{
                 low = mid + 1;
