@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2104-sum-of-subarray-ranges](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2104-sum-of-subarray-ranges) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2215-find-the-difference-of-two-arrays](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2215-find-the-difference-of-two-arrays) |
+| [2226-maximum-candies-allocated-to-k-children](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2226-maximum-candies-allocated-to-k-children) |
 | [2965-find-missing-and-repeated-values](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2965-find-missing-and-repeated-values) |
 ## Hash Table
 |  |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1539-kth-missing-positive-number](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1539-kth-missing-positive-number) |
 | [1552-magnetic-force-between-two-balls](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1552-magnetic-force-between-two-balls) |
 | [1901-find-a-peak-element-ii](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/1901-find-a-peak-element-ii) |
+| [2226-maximum-candies-allocated-to-k-children](https://github.com/LakshyaSingla/LeetCode-Questions/tree/master/2226-maximum-candies-allocated-to-k-children) |
 ## Sorting
 |  |
 | ------- |
