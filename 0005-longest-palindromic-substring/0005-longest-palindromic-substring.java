@@ -1,17 +1,15 @@
 class Solution {
-    int[] expand(String s, int left, int right){
-        while(left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)){
-            left--;
-            right++;
+    int[] expand(String s, int l, int r){
+        while(l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)){
+            l--;
+            r++;
         }
-        return new int[]{left + 1, right - 1};
+        return new int[]{l + 1, r - 1};
     }
     public String longestPalindrome(String s) {
         int n = s.length();
-        if(n == 0) return "";
         int left = 0, right = 0;
         for(int i = 0; i < n; i++){
-            
             int[] odd = expand(s, i, i);
             int[] even = expand(s, i, i + 1);
 
@@ -23,7 +21,6 @@ class Solution {
                 right = even[1];
                 left = even[0];
             }
-            
         }
         return s.substring(left, right + 1);
     }
