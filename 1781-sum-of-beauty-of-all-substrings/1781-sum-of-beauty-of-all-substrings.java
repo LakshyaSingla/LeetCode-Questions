@@ -1,13 +1,12 @@
 class Solution {
     public int beautySum(String s) {
-        int sum = 0;
         int n = s.length();
-
+        long sum = 0;
         for(int i = 0; i < n; i++){
             int[] hash = new int[26];
             for(int j = i; j < n; j++){
                 hash[s.charAt(j) - 'a']++;
-                int max = 0, min = Integer.MAX_VALUE;
+                int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
                 for(int freq : hash){
                     if(freq > 0){
                         max = Math.max(max, freq);
@@ -17,6 +16,6 @@ class Solution {
                 sum += max - min;
             }
         }
-        return sum;
+        return (int) sum;
     }
 }
