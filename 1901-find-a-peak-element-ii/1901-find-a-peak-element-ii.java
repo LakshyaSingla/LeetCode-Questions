@@ -1,26 +1,27 @@
 class Solution {
-    int findMaxRow(int col, int[][] mat){
-        int maxIndex = -1, maxRow = Integer.MIN_VALUE;
+
+    int findMaxRow(int[][] mat, int mid){
+        int max = Integer.MIN_VALUE, index = -1;
         for(int i = 0; i < mat.length; i++){
-            if(mat[i][col] > maxRow){
-                maxRow = mat[i][col];
-                maxIndex = i;
+            if(mat[i][mid] > max){
+                max = mat[i][mid];
+                index = i;
             }
         }
-        return maxIndex;
+        return index;
+
     }
     public int[] findPeakGrid(int[][] mat) {
-        int n = mat.length;
-        int m = mat[0].length;
+        int n = mat.length, m = mat[0].length;
         int low = 0, high = m - 1;
         while(low <= high){
             int mid = low + (high - low) / 2;
-            int row = findMaxRow(mid, mat);
-            int left = (mid > 0) ? mat[row][mid - 1] : -1;
-            int right = (mid < m - 1) ? mat[row][mid + 1] : -1;
-            if(mat[row][mid] > left && mat[row][mid] > right){
-                return new int[]{row, mid};
-            }else if(mat[row][mid] < left){
+            int maxRow = findMaxRow(mat, mid);
+            int left = (mid > 0) ? mat[maxRow][mid - 1] : -1;
+            int right = (mid < m - 1) ? mat[maxRow][mid + 1] : -1;
+            if(mat[maxRow][mid] > left && mat[maxRow][mid] > right){
+                return new int[]{maxRow, mid};
+            }else if(left > mat[maxRow][mid]){
                 high = mid - 1;
             }else{
                 low = mid + 1;
