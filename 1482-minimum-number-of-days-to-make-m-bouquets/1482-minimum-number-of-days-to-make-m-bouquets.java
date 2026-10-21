@@ -1,8 +1,8 @@
 class Solution {
     boolean isPossible(int[] bloomDay, int mid, int m, int k){
-        int noOfB = 0, count = 0;
-        for(int i = 0; i < bloomDay.length; i++){
-            if(bloomDay[i] <= mid){
+        int count = 0, noOfB = 0;
+        for(int day : bloomDay){
+            if(day <= mid){
                 count++;
             }else{
                 noOfB += count / k;
@@ -17,7 +17,7 @@ class Solution {
         if((long) m * k > n) return -1;
         int low = Integer.MAX_VALUE, high = 0;
         for(int day : bloomDay){
-            low = Math.min(day, low);
+            low = Math.min(low, day);
             high = Math.max(high, day);
         }
         while(low <= high){
