@@ -1,25 +1,26 @@
 class Solution {
-    boolean isPossible(int[] weights, int days, int mid){
-        int capacity = 0, day = 1;
-        for(int num : weights){
-            if(capacity + num > mid){
+    boolean isPossible(int[] weights, int mid, int days){
+        int day = 1, cap = 0;
+        for(int i = 0; i < weights.length; i++){
+            if(cap + weights[i] > mid){
                 day++;
-                capacity = num;
+                cap = weights[i];
             }else{
-                capacity += num;
+                cap += weights[i];
             }
         }
         return day <= days;
     }
     public int shipWithinDays(int[] weights, int days) {
+        int n = weights.length;
         int low = 0, high = 0;
-        for(int num : weights){
-            low = Math.max(num, low);
-            high += num;
+        for(int x : weights){
+            low = Math.max(low, x);
+            high += x;
         }
         while(low <= high){
             int mid = low + (high - low) / 2;
-            if(isPossible(weights, days, mid)){
+            if(isPossible(weights, mid, days)){
                 high = mid - 1;
             }else{
                 low = mid + 1;
