@@ -1,8 +1,8 @@
 class Solution {
     boolean isPossible(int[] nums, int mid, int k){
-        int sum = 0;
+        long sum = 0;
         for(int num : nums){
-            sum += Math.ceil((double) num/ (double) mid);
+            sum += Math.ceil((double) num / (double) mid);
         }
         return sum <= k;
     }
