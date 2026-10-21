@@ -10,8 +10,8 @@ class Solution {
     public int maximumCandies(int[] candies, long k) {
         int n = candies.length;
         int low = 1, high = 0;
-        for(int num : candies){
-            high = Math.max(high, num);
+        for(int candy : candies){
+            high = Math.max(candy, high);
         }
         while(low <= high){
             int mid = low + (high - low) / 2;
