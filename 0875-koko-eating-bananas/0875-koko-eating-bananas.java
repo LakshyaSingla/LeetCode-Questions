@@ -1,6 +1,6 @@
 class Solution {
     boolean isPossible(int[] piles, int mid, int h){
-        int sum = 0;
+        long sum = 0;
         for(int pile : piles){
             sum += Math.ceil((double) pile / (double) mid);
         }
@@ -11,7 +11,7 @@ class Solution {
         int low = 1, high = 0;
         for(int pile : piles){
             high = Math.max(pile, high);
-        }   
+        }
         while(low <= high){
             int mid = low + (high - low) / 2;
             if(isPossible(piles, mid, h)){
