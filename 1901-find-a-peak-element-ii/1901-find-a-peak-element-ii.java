@@ -1,5 +1,4 @@
 class Solution {
-
     int findMaxRow(int[][] mat, int mid){
         int max = Integer.MIN_VALUE, index = -1;
         for(int i = 0; i < mat.length; i++){
@@ -9,7 +8,6 @@ class Solution {
             }
         }
         return index;
-
     }
     public int[] findPeakGrid(int[][] mat) {
         int n = mat.length, m = mat[0].length;
@@ -21,7 +19,7 @@ class Solution {
             int right = (mid < m - 1) ? mat[maxRow][mid + 1] : -1;
             if(mat[maxRow][mid] > left && mat[maxRow][mid] > right){
                 return new int[]{maxRow, mid};
-            }else if(left > mat[maxRow][mid]){
+            }else if(mat[maxRow][mid] < left){
                 high = mid - 1;
             }else{
                 low = mid + 1;
