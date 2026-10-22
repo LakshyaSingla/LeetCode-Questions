@@ -1,12 +1,12 @@
 class Solution {
     boolean isPossible(int[] nums, int mid, int k){
-        int sum = 0, count = 1;
-        for(int i = 0; i < nums.length; i++){
-            if(sum + nums[i] > mid){
+        long sum = 0, count = 1;
+        for(int num : nums){
+            if(sum + num > mid){
                 count++;
-                sum = nums[i];
+                sum = num;
             }else{
-                sum += nums[i];
+                sum += num;
             }
         }
         return count <= k;
