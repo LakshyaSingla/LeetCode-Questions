@@ -24,7 +24,7 @@
 class Solution {
     public int widthOfBinaryTree(TreeNode root) {
         if(root == null) return 0;
-
+        
         Queue<Pair> q = new LinkedList<>();
         q.offer(new Pair(root, 0));
 
@@ -37,13 +37,11 @@ class Solution {
                 TreeNode node = q.peek().node;
                 int curr = q.peek().num - min;
                 q.poll();
-
                 if(i == 0) first = curr;
                 if(i == size - 1) last = curr;
 
-                if(node.left != null) q.offer(new Pair(node.left, curr * 2 + 1));
-                if(node.right != null) q.offer(new Pair(node.right, curr * 2 + 2));
-
+                if(node.left != null) q.offer(new Pair(node.left, 2 * curr + 1));
+                if(node.right != null) q.offer(new Pair(node.right, 2 * curr + 2));
             }
             ans = Math.max(ans, last - first + 1);
         }
